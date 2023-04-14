@@ -11,12 +11,12 @@ export const PrevArrow = (props) => {
                     backgroundColor: "black", 
                     scale:'2',
                     color:"black", 
+                    width:"30px",
                     marginTop:"20px",
-                    paddingTop:"2px",
+                    paddingTop:"0px",
                     borderRadius:"0 4px 4px 0",
-                    paddingLeft:"90px",
-                    marginLeft:"-150px",
-                    paddingRight:"20px",
+                    marginLeft:"-43px",
+                    paddingLeft:"10px",
                     opacity:"65%",
                     color:"black"
                 }}
@@ -33,14 +33,13 @@ export const NextArrow = (props) => {
                 onClick={props.onClick}
                 style={{...props.style , 
                     backgroundColor: "black", 
+                    width:"30px",
                     scale:'2',
                     color:"black", 
                     marginTop:"20px",
-                    paddingTop:"2px",
-                    paddingLeft:"",
+                    marginRight:"-43px",
+                    paddingTop:"0px",
                     borderRadius:"4px 0 0 4px",
-                    paddingRight:"90px",
-                    marginRight:"-120px",
                     opacity:"60%"
                 }}
             />

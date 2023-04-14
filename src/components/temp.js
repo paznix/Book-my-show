@@ -5,6 +5,7 @@ export default function Temp() {
         <p className="font-bold">
             This is a temporary component.
         </p>
+        
     );
 
 }

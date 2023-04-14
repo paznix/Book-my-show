@@ -42,7 +42,7 @@ const HeroCarousel = () => {
       ];
       return(
         <>
-            <div className="lg:hidden">
+            <div className="lg:hidden ">
             <HeroSlider {...settings}> 
             {
                 images.map((image) => (
@@ -59,14 +59,13 @@ const HeroCarousel = () => {
             <HeroSlider {...settingsLg}> 
             {
                 images.map((image) => (
-                    <div className="w-full h-96 px-1 py-3 focus:outline-none">
-                        <img src={image} alt="testing" className="w-full h-full rounded-lg"/>
+                    <div className="w-full h-96 px-1 py-3 focus:outline-none ">
+                        <img src={image} alt="testing" className="w-full h-full rounded-lg  hover:cursor-pointer"/>
                     </div>
                 ))
             }
             </HeroSlider>
-            </div>
-      
+            </div>   
         </>
       );
 };

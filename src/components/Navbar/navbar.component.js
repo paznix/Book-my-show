@@ -76,7 +76,7 @@ const Navbar = () => {
   return (
     <>
       <nav className="bg-navCol-800 p-4">
-        <div className="md:hidden">
+        <div className="md:hidden ">
           {/* Mobile Screen */}
           <NavSm />
         </div>

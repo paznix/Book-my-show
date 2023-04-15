@@ -7,13 +7,15 @@ const Poster = (props) => {
                 <div  className="h-100 ">
                     <img className="rounded-xl  hover:cursor-pointer" src={props.src} alt={props.title}/>
                 </div>
-                <span className={
-                    `font-bold mt-2 sm:text-sm text-ellipsis ${props.isDark ? "text-white" : "text-gray-800"}`
+                <h2 className={
+                    `font-bold mt-2 text-sm lg:text-xl ${
+                        props.themeDark ? "text-white" : "text-gray-800"
+                    }`
                 }>
                     {props.title}
-                </span>
+                </h2>
                 <p className={
-                    `text-xs ${props.isDark ? "text-white" : "text-gray-400"}`
+                    `text-xs lg:text-sm ${ props.themeDark ? "text-white" : "text-gray-500"}`
                 }>
                     {props.desc}
                 </p>

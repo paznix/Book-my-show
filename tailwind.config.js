@@ -18,6 +18,7 @@ module.exports = {
           900: '#070b16',
         },
         'button': '#F84464',
+        'premier': '#2B3148',
       
       }
 

@@ -42,7 +42,7 @@ const NavLg = () => {
           <img
             src="https://in.bmscdn.com/webin/common/icons/logo.svg"
             alt="logo"
-            className="w-full g-full pr-4 pt-1"
+            className="w-full g-full pr-6 pt-1"
           />
         </div>
         <div className=" bg-white w-3/4 flex items-center p-2 rounded">
@@ -64,7 +64,7 @@ const NavLg = () => {
         </span>
         <button className="text-white text-sm bg-button px-2 py-1 text-center pb-1 rounded-lg">Sign in</button>
         <div className="text-white h-8 w-8">
-        <BiMenu className="w-full h-full"/>
+        <BiMenu className="w-full h-full hover:cursor-pointer"/>
       </div>
       </div>
       

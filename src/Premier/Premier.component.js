@@ -3,6 +3,8 @@ import Slider from "react-slick";
 
 //Component
 import Poster from "../components/Poster/Poster.component";
+import { LArrow, RArrow} from "../components/Poster/SmallArrow.component";
+
 
 export const Premier = () => {
     const settings = {
@@ -10,7 +12,10 @@ export const Premier = () => {
         autoplay: false,
         slidesToShow: 5,
         slidesToScroll:5,
-        InitialState:0
+        InitialState:0,
+        arrows: true,
+        prevArrow: <LArrow/>,
+        nextArrow: <RArrow/>,
     };
 
     const PremierImages = [
@@ -78,9 +83,9 @@ export const Premier = () => {
 
     return (
         <>
-        <Slider { ...settings }>
+        <Slider {...settings}>
             {PremierImages.map((image) => (
-                <Poster {...image} />
+                <Poster {...image}  /> 
             ))}
         </Slider>
         </>

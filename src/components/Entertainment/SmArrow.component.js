@@ -1,47 +1,50 @@
 import React from "react";
 import { BiBorderRadius } from "react-icons/bi";
 
-export const PrevArrow = (props) => {
+export const SmLArrow = (props) => {
     return (
         <>
             <div
                 className={props.className}
                 onClick={props.onClick}
                 style={{...props.style , 
-                    backgroundColor: "black", 
-                    scale:'2',
+                    scale:'1.25',
                     color:"black", 
-                    width:"30px",
-                    marginTop:"20px",
                     paddingTop:"2px",
-                    borderRadius:"0 4px 4px 0",
+                    borderRadius:"100px",
+                    position:"absolute",
+                    top:"50%",
                     opacity:"75%",
-                    color:"black",
-                    position: "absolute",
+                    right: "0",
+                    overflow:"hidden",
+                    marginLeft:"-10px",
+                    filter: "invert(10)",
+                    backgroundColor:"black"
                 }}
             />
         </>
     );
 };
 
-export const NextArrow = (props) => {
+export const SmRArrow = (props) => {
     return (
         <>
             <div
                 className={props.className}
                 onClick={props.onClick}
                 style={{...props.style , 
-                    backgroundColor: "black", 
-                    width:"30px",
-                    scale:'2',
+                    scale:'1.25',
                     color:"black", 
-                    marginTop:"20px",
                     paddingTop:"2px",
-                    borderRadius:"4px 0 0 4px",
+                    borderRadius:"100px",
                     opacity:"75%",
                     position:"absolute",
+                    top:"50%",
                     right: "0",
-                    overflow:"hidden"
+                    overflow:"hidden",
+                    marginRight:"-10px",
+                    filter: "invert(10)",
+                    backgroundColor:"black"
                 }}
             />
         </>

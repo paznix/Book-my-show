@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-import { SmLArrow, SmRArrow } from "./SmArrow.component";
+import { settingsSArrow } from "../../config/PosterCarousel.config";
 
 const EntertainmentCard = (props)=> {
     return (
@@ -29,19 +29,9 @@ const EntertainmentCardSlider = () => {
         "https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:ote-MyBFdmVudHM%3D,otc-FFFFFF,otf-Roboto,ots-64,ox-48,oy-320,ott-b:w-300:q-80/arts-crafts-collection-202211140440.png"
     ];
 
-    const settings = {
-        infinite: false,
-        autoplay: false,
-        slidesToShow: 5,
-        slidesToScroll:3,
-        InitialState:0,
-        prevArrow: <SmLArrow/>,
-        nextArrow: <SmRArrow/>,
-    }
-
     return (
         <>
-            <Slider {...settings}>
+            <Slider {...settingsSArrow}>
             {EntertainmentImage.map((image) => (
                 <EntertainmentCard src={image} />
             ))}

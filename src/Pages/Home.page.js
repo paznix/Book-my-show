@@ -1,16 +1,18 @@
 import React from "react";
 import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.component";
-import { Premier } from "../Premier/Premier.component";
+import { PremierDark, PremierLight } from "../Premier/Premier.component";
+import PosterSlider from "../components/PosterSlider/PosterSlider.component";
+import { PremierImages } from "../Premier/PremierImages.component";
 
 const HomePage = () => {
   return (
     <>
-      <div className="container mx-auto  ">
+      <div className="container mx-auto ">
         <div>
-          <h1 className="font-bold text-2xl ml-2 mt-10 pb-3">
+          <h1 className="font-bold text-2xl ml-2 mt-10">
             Recommended Movies
           </h1>
-          <Premier />
+          <PremierLight />
         </div>
       </div>
 
@@ -37,8 +39,14 @@ const HomePage = () => {
             alt="Premier"
             className="pl-2 pb-4"
           />
-          <Premier  themeDark/>
+          <PremierDark />
         </div>
+      </div>
+      <div >
+        <PosterSlider
+          images={PremierImages}
+          title="Events Happening Near You"
+        />
       </div>
     </>
   );

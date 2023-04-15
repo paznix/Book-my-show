@@ -9,13 +9,13 @@ const Poster = (props) => {
                 </div>
                 <h2 className={
                     `font-bold mt-2 text-sm lg:text-xl ${
-                        props.themeDark ? "text-white" : "text-gray-800"
+                        props.isDark ? "text-white" : "text-gray-800"
                     }`
                 }>
                     {props.title}
                 </h2>
                 <p className={
-                    `text-xs lg:text-sm ${ props.themeDark ? "text-white" : "text-gray-500"}`
+                    `text-xs lg:text-sm ${ props.isDark ? "text-white" : "text-gray-500"}`
                 }>
                     {props.desc}
                 </p>

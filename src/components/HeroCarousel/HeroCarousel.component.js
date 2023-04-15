@@ -12,7 +12,7 @@ const HeroCarousel = () => {
     const settingsLg = {
         arrows: true,
         centerMode: true,
-        centerPadding: "350px",
+        centerPadding: "270px",
         dots: false,
         autoplay: true,
         infinite: true,
@@ -55,7 +55,7 @@ const HeroCarousel = () => {
             </div>
             
             
-            <div className="hidden lg:block">
+            <div className="hidden lg:block ">
             <HeroSlider {...settingsLg}> 
             {
                 images.map((image) => (

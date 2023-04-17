@@ -6,15 +6,18 @@ import "slick-carousel/slick/slick-theme.css";
 
 //HOC
 import DefaultHOC from "./HOC/Default.HOC";
+import MovieHOC from "./HOC/Movie.HOC";
 
 //Pages
 import HomePage from "./Pages/Home.page";
+import Movie from "./Pages/Movie.page";
 
 export default function App() {
   return (
     //? <> </> tags are called fragments
     <>
     <DefaultHOC exact path="/" Component= {HomePage} />
+    <MovieHOC exact path="/movies/:id" Component= {Movie} />
     </>
   );
 }

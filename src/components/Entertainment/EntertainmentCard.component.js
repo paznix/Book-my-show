@@ -6,7 +6,7 @@ import { settingsSArrow } from "../../config/PosterCarousel.config";
 const EntertainmentCard = (props)=> {
     return (
     <>
-        <div className="w-25 h-25 px-3">
+        <div className="w-25 h-25 pl-1 pr-1 lg:px-3">
             <img
                 className="w-full h-full rounded-xl  hover:cursor-pointer"
                 src={props.src}

@@ -8,7 +8,7 @@ const PosterSlider = (props) => {
   return (
     <>
       <div className="container py-3 mx-auto">
-        <h3 className="text-premier text-3xl font-bold pl-2 pb-4 mt-10">{props.title}</h3>
+        <h3 className="text-premier lg:text-2xl text-sm font-bold pl-2 pb-4 mt-10">{props.title}</h3>
         <Slider {...settingsLArrow}>
           {props.images.map((image) => (
             <Poster {...image}/>

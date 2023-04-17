@@ -1,22 +1,22 @@
 import React from "react";
 import EntertainmentCardSlider from "../components/Entertainment/EntertainmentCard.component";
-import { PremierDark, PremierLight } from "../Premier/Premier.component";
+import { PremierDark, Premier } from "../Premier/Premier.component";
 import PosterSlider from "../components/PosterSlider/PosterSlider.component";
-import { PremierImages } from "../Premier/PremierImages.component";
+import { PremierImages } from "../config/PremierImages.component";
 
 const HomePage = () => {
   return (
     <>
       <div className="container mx-auto ">
         <div>
-          <h1 className="font-bold text-2xl ml-2 mt-10">
+          <h1 className="font-bold text-2xl pl-2 mt-10">
             Recommended Movies
           </h1>
-          <PremierLight />
+          <Premier />
         </div>
       </div>
 
-      <div className="w-full rounded-xl flex justify-center mt-10 px-8 md:px-12 lg:px-28">
+      <div className="w-full rounded-xl flex justify-center mt-10 container mx-auto px-2 md:px-0 lg:px-0">
         <a href="/home">
           <img
             src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/stream-leadin-web-collection-202210241242.png"
@@ -26,7 +26,7 @@ const HomePage = () => {
       </div>
 
       <div className="container mx-auto pb-10">
-        <h1 className="font-bold text-2xl ml-2 mt-10 pb-3 ">
+        <h1 className="font-bold text-2xl pl-2 lg:pl-3 mt-10 pb-3 ">
           The Best of Live Events
         </h1>
         <EntertainmentCardSlider />

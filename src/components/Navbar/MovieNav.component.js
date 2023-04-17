@@ -1,5 +1,5 @@
 import React from "react";
-import { BiChevronRight, BiSearch, BiChevronDown, BiMenu } from "react-icons/bi";
+import { BiChevronRight, BiSearch, BiChevronDown, BiMenu, BiShareAlt, BiChevronLeft} from "react-icons/bi";
 
 const NavSm = () => {
   return (
@@ -7,32 +7,15 @@ const NavSm = () => {
       <div className="text-white flex items-center justify-between">
         <div>
           <h3 className="text-xl font-bold">It All Starts Here!</h3>
-          <span className="text-gray-200 text-xs flex items-center">
-            Chandigarh <BiChevronRight />
-          </span>
         </div>
         <div className="w-7 h-7">
-          <BiSearch className="w-full h-full" />
+          <BiShareAlt className="w-full h-full" />
         </div>
       </div>
     </>
   );
 };
 
-const NavMd = () => {
-  return (
-    <div className=" bg-white w-full flex items-center p-2 rounded">
-      <div className="w-7 h-7 mr-2">
-        <BiSearch className="w-full h-full text-gray-400" />
-      </div>
-      <input
-        type="search"
-        className="w-full focus:outline-none"
-        placeholder="Search for Movies, Plays, Sports, Events and Activities"
-      ></input>
-    </div>
-  );
-};
 
 const NavLg = () => {
   return (
@@ -72,19 +55,19 @@ const NavLg = () => {
   );
 };
 
-const Navbar = () => {
+const MovieNavbar = () => {
   return (
     <>
-      <nav className="bg-navCol-700 p-4">
-        <div className="md:hidden ">
+      <nav>
+        <div className="md:hidden  absolute inset-x-0 z-30 bg-opacity-20 backdrop-blur-xl backdrop-filter bg-navCol-900 p-4">
           {/* Mobile Screen */}
           <NavSm />
         </div>
-        <div className="hidden lg:hidden md:flex">
+        <div className="hidden lg:hidden md:block absolute inset-x-0 z-30 bg-opacity-20 backdrop-blur-lg backdrop-filter bg-navCol-200 p-4">
           {/* Tablet Screen */}
-          <NavMd />
+          <NavSm />
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex bg-navCol-700 p-4 mb-5 ">
           {/* Desktop Screen */}
           <NavLg />
         </div>
@@ -93,4 +76,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default MovieNavbar;

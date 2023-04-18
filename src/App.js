@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+
 
 // Import css files
 import "slick-carousel/slick/slick.css";

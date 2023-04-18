@@ -5,19 +5,54 @@ import { BiChevronRight, BiShareAlt } from "react-icons/bi";
 const MovieHero = () => {
   return (
     <>
-      <div className="md:hidden">
+      <div className=" lg:hidden">
         <img
           src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
           alt=""
+          className=" rounded-b-3xl shadow-lg"
         />
+        <div className="container mx-auto flex flex-col gap-4 mt-4">
+          <div className="flex items-center gap-3 text-black  ">
+            <AiFillStar className="text-button h-10 w-10" />
+            <h2 className=" font-bold text-2xl">7.2/10</h2>
+            <span className="font-thin text-sm pl-3 flex items-center">
+              176 votes <BiChevronRight className="pt-1" />
+            </span>
+          </div>
+          <div className="bg-gray-200 rounded-3xl flex flex-row justify-between p-5 gap-6 backdrop-blur-lg backdrop-filter bg-opacity-80">
+            <div>
+              <h2 className="font-bold text-xl text-black">
+                Add your Rating & Review
+              </h2>
+              <span className="text-gray-400">Your Ratings Matter</span>
+            </div>
+            <button className="bg-white border-button border text-button font-bold px-3 py-1 rounded-xl focus:bg-gray-200 hover:shadow-md">
+              Rate now
+            </button>
+          </div>
+          <div className="flex flex-row ml-1 gap-2">
+            <button className=" bg-gray-100 px-1 border rounded-sm border-b-slate-400">
+              2D
+            </button>
+            <button className=" bg-gray-100 border border-b-slate-400 px-1 rounded">
+              Punjabi
+            </button>
+          </div>
+          <div className="container bottom-2 fixed mx-auto">
+            <button className="text-white w-full font-bold text-lg bg-button mb-2 py-4 text-center rounded-lg">
+              Book Tickets
+            </button>
+          </div>
+        </div>
+      
       </div>
 
-      <div className="hidden md:block lg:hidden">
+      {/* <div className="hidden md:block lg:hidden">
         <img
           src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
           alt=""
         />
-      </div>
+      </div> */}
 
       <div
         className="relative w-full hidden lg:block"
@@ -70,10 +105,14 @@ const MovieHero = () => {
               </div>
             </div>
 
-            <div className="text-white absolute gap-3 top-16 right-16 rounded-xl px-4 py-2 items-center justify-around bg-gray-800 bg-opacity-70 backdrop-blur backdrop-filter flex flex-row">
-              <BiShareAlt />
-              <button className="">Share</button>
+            <div>
+              <h1 className="text-white">About The Movie</h1>
             </div>
+
+            <button className="text-white absolute gap-3 top-16 right-16 rounded-xl px-4 py-2 items-center justify-around bg-gray-800 bg-opacity-70 backdrop-blur backdrop-filter flex flex-row">
+              <BiShareAlt />
+              Share
+            </button>
           </div>
         </div>
 

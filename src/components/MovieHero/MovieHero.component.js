@@ -5,13 +5,13 @@ import { BiChevronRight, BiShareAlt } from "react-icons/bi";
 const MovieHero = () => {
   return (
     <>
-      <div className=" lg:hidden mx-2">
+      <div className=" lg:hidden">
         <img
           src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
           alt=""
           className=" rounded-b-3xl shadow-lg"
         />
-        <div className="container mx-auto flex flex-col gap-4 mt-4">
+        <div className=" flex flex-col gap-4 mt-4">
           <div className="flex items-center gap-3 text-black  ">
             <AiFillStar className="text-button h-10 w-10" />
             <h2 className=" font-bold text-2xl">7.2/10</h2>
@@ -21,12 +21,12 @@ const MovieHero = () => {
           </div>
           <div className="bg-gray-200 rounded-3xl flex flex-row justify-between p-5 gap-6 backdrop-blur-lg backdrop-filter bg-opacity-80">
             <div>
-              <h2 className="font-bold text-xl text-black">
+              <h2 className="font-bold text-lg text-black">
                 Add your Rating & Review
               </h2>
-              <span className="text-gray-400">Your Ratings Matter</span>
+              <span className="text-sm text-gray-400">Your Ratings Matter</span>
             </div>
-            <button className="bg-white border-button border text-button font-bold px-3 py-1 rounded-xl focus:bg-gray-200 hover:shadow-md">
+            <button className="bg-white border-button border text-button font-bold px-1 py-1 rounded-xl focus:bg-gray-200 hover:shadow-md">
               Rate now
             </button>
           </div>
@@ -38,31 +38,14 @@ const MovieHero = () => {
               Punjabi
             </button>
           </div>
-          <div className="container bottom-2 fixed mx-auto">
+          <div className="container bottom-2 fixed mx-auto px-2">
             <button className="text-white w-full font-bold text-lg drop-shadow-2xl bg-button py-4 text-center rounded-lg">
               Book Tickets
             </button>
           </div>
         </div>
-        <div className="container mx-auto mt-8 flex flex-col gap-5">
-          <h1 className="text-black font-bold text-2xl ">About the movie</h1>
-          <p className="leading-8 text-xl mb-3">
-            Brar Group and Khaiwal Group are rivals in the gambling market.
-            Things change when Brar is murdered and Arjun, who is Brar`s right
-            hand, is accused of murdering him. While a writer named Poras wants
-            to dig up the truth about the murder to complete his novel.
-          </p>
-
-          <hr></hr>
-        </div>
       </div>
 
-      {/* <div className="hidden md:block lg:hidden">
-        <img
-          src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
-          alt=""
-        />
-      </div> */}
 
       <div
         className="relative w-full hidden lg:block"
@@ -136,20 +119,7 @@ const MovieHero = () => {
             alt=""
           />
         </div>
-        <div className="container mx-auto mt-8 flex ">
-          <div className="w-3/5 flex flex-col gap-5">
-            <h1 className="text-black font-bold text-2xl ">About the movie</h1>
-            <p className="leading-8 text-xl mb-3">
-              Brar Group and Khaiwal Group are rivals in the gambling market.
-              Things change when Brar is murdered and Arjun, who is Brar`s right
-              hand, is accused of murdering him. While a writer named Poras
-              wants to dig up the truth about the murder to complete his novel.
-            </p>
-
-            <hr/> 
-            <h1>HellO WOrld</h1>
-          </div>
-        </div>
+       
       </div>
     </>
   );

@@ -59,8 +59,8 @@ const HeroCarousel = () => {
             <HeroSlider {...settingsLg}> 
             {
                 images.map((image) => (
-                    <div className="w-full h-96 px-1 py-3 focus:outline-none ">
-                        <img src={image} alt="testing" className="w-full h-full rounded-lg  hover:cursor-pointer"/>
+                    <div className="w-full h-96 px-1 py-3 focus:outline-none  ">
+                        <img src={image} alt="testing" className="w-full h-full rounded-xl  hover:scale-105 transition-transform hover:border-white border-2 hover:cursor-pointer"/>
                     </div>
                 ))
             }

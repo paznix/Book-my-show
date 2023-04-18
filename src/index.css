@@ -17,6 +17,10 @@
     visibility: hidden;
   }
 
+.slick-list {
+    overflow: clip;
+}
+
 * {
     margin: 0;
     padding: 0;

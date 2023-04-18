@@ -5,7 +5,7 @@ import { BiChevronRight, BiShareAlt } from "react-icons/bi";
 const MovieHero = () => {
   return (
     <>
-      <div className=" lg:hidden">
+      <div className=" lg:hidden mx-2">
         <img
           src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
           alt=""
@@ -39,12 +39,22 @@ const MovieHero = () => {
             </button>
           </div>
           <div className="container bottom-2 fixed mx-auto">
-            <button className="text-white w-full font-bold text-lg bg-button mb-2 py-4 text-center rounded-lg">
+            <button className="text-white w-full font-bold text-lg drop-shadow-2xl bg-button py-4 text-center rounded-lg">
               Book Tickets
             </button>
           </div>
         </div>
-      
+        <div className="container mx-auto mt-8 flex flex-col gap-5">
+          <h1 className="text-black font-bold text-2xl ">About the movie</h1>
+          <p className="leading-8 text-xl mb-3">
+            Brar Group and Khaiwal Group are rivals in the gambling market.
+            Things change when Brar is murdered and Arjun, who is Brar`s right
+            hand, is accused of murdering him. While a writer named Poras wants
+            to dig up the truth about the murder to complete his novel.
+          </p>
+
+          <hr></hr>
+        </div>
       </div>
 
       {/* <div className="hidden md:block lg:hidden">
@@ -105,10 +115,6 @@ const MovieHero = () => {
               </div>
             </div>
 
-            <div>
-              <h1 className="text-white">About The Movie</h1>
-            </div>
-
             <button className="text-white absolute gap-3 top-16 right-16 rounded-xl px-4 py-2 items-center justify-around bg-gray-800 bg-opacity-70 backdrop-blur backdrop-filter flex flex-row">
               <BiShareAlt />
               Share
@@ -129,6 +135,20 @@ const MovieHero = () => {
             src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
             alt=""
           />
+        </div>
+        <div className="container mx-auto mt-8 flex ">
+          <div className="w-3/5 flex flex-col gap-5">
+            <h1 className="text-black font-bold text-2xl ">About the movie</h1>
+            <p className="leading-8 text-xl mb-3">
+              Brar Group and Khaiwal Group are rivals in the gambling market.
+              Things change when Brar is murdered and Arjun, who is Brar`s right
+              hand, is accused of murdering him. While a writer named Poras
+              wants to dig up the truth about the murder to complete his novel.
+            </p>
+
+            <hr/> 
+            <h1>HellO WOrld</h1>
+          </div>
         </div>
       </div>
     </>

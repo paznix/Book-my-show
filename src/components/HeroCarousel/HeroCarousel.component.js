@@ -24,7 +24,7 @@ const HeroCarousel = () => {
   const settingsLg = {
     arrows: true,
     centerMode: true,
-    centerPadding: "290px",
+    centerPadding: "400px",
     dots: false,
     autoplay: true,
     infinite: true,

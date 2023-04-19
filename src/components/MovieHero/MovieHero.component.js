@@ -7,16 +7,16 @@ const MovieHero = () => {
     <>
       <div className=" lg:hidden">
         <img
-          src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
+          src="https://s5.cdn.memeburn.com/wp-content/uploads/2022/11/John-Wick-1024x528.jpg"
           alt=""
           className=" rounded-b-3xl shadow-lg"
         />
         <div className=" flex flex-col gap-4 mt-4">
           <div className="flex items-center gap-3 text-black  ">
             <AiFillStar className="text-button h-10 w-10" />
-            <h2 className=" font-bold text-2xl">7.2/10</h2>
+            <h2 className=" font-bold text-2xl">8.7/10</h2>
             <span className="font-thin text-sm pl-3 flex items-center">
-              176 votes <BiChevronRight className="pt-1" />
+              302 votes <BiChevronRight className="pt-1" />
             </span>
           </div>
           <div className="bg-gray-200 rounded-3xl flex flex-row justify-between p-5 gap-6 backdrop-blur-lg backdrop-filter bg-opacity-80">
@@ -32,10 +32,10 @@ const MovieHero = () => {
           </div>
           <div className="flex flex-row ml-1 gap-2">
             <button className=" bg-gray-100 px-1 border rounded-sm border-b-slate-400">
-              2D
+              2D, MX4D, 4DX, ICE, IMAX 2D
             </button>
             <button className=" bg-gray-100 border border-b-slate-400 px-1 rounded">
-              Punjabi
+              English, Hindi
             </button>
           </div>
           <div className="container bottom-2 fixed mx-auto px-2">
@@ -55,23 +55,23 @@ const MovieHero = () => {
           <div className="flex flex-row">
             <div className="absolute z-20 top-16 flex flex-row">
               <img
-                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:oi-discovery-catalog@@icons@@like_202006280402.png,ox-24,oy-617,ow-29:ote-Mi40SyBsaWtlcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-70:q-80/et00355970-dlsfedrlqz-portrait.jpg"
+                src="https://www.themoviedb.org/t/p/original/vZloFAK7NmvMGKE7VkF5UHaz0I.jpg"
                 alt="poster"
                 className="w-54 h-96 rounded-xl"
               />
               <div className="pl-10 flex flex-col gap-8">
                 <h1 className="text-white font-bold text-5xl ">
-                  Yaaran Da Rutbaa
+                  John Wick: Chapter 4
                 </h1>
                 <div className="flex items-center gap-3 text-white">
                   <AiFillStar className="text-button h-10 w-10" />
-                  <h2 className=" font-bold text-3xl">7.2/10</h2>
+                  <h2 className=" font-bold text-3xl">8.7/10</h2>
                   <span className="font-thin text-sm pl-3 flex items-center">
-                    176 votes <BiChevronRight className="pt-1" />
+                    302 votes <BiChevronRight className="pt-1" />
                   </span>
                 </div>
 
-                <div className="bg-gray-700 rounded-xl flex flex-row p-5 gap-6 backdrop-blur-lg backdrop-filter bg-opacity-80">
+                <div className="bg-gray-700 rounded-xl flex flex-row justify-between p-5 gap-6 backdrop-blur-lg backdrop-filter bg-opacity-80">
                   <div>
                     <h2 className="font-bold text-xl text-gray-300">
                       Add your Rating & Review
@@ -84,9 +84,9 @@ const MovieHero = () => {
                 </div>
 
                 <div className="flex flex-row ml-1 gap-2">
-                  <button className=" bg-gray-300 px-1 border-1">2D</button>
+                  <button className=" bg-gray-300 px-1 border-1">2D, MX4D, 4DX, ICE, IMAX 2D</button>
                   <button className=" bg-gray-300 px-1 border-1">
-                    Punjabi
+                    English, Hindi
                   </button>
                 </div>
 
@@ -115,7 +115,7 @@ const MovieHero = () => {
         <div className=" w-full overflow-y-clip h-full">
           <img
             className=" w-full"
-            src="https://i.ytimg.com/vi/63JbciGDeUQ/maxresdefault.jpg"
+            src="https://s5.cdn.memeburn.com/wp-content/uploads/2022/11/John-Wick-1024x528.jpg"
             alt=""
           />
         </div>

@@ -67,7 +67,7 @@ const MovieNavbar = () => {
           {/* Tablet Screen */}
           <NavSm />
         </div>
-        <div className="hidden lg:flex bg-navCol-700 p-4 mb-5 ">
+        <div className="hidden lg:flex bg-navCol-700 p-4 ">
           {/* Desktop Screen */}
           <NavLg />
         </div>

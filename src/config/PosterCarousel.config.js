@@ -15,6 +15,7 @@ export const settingsLArrow = {
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
+        
       },
     },
     {
@@ -29,8 +30,8 @@ export const settingsLArrow = {
       breakpoint: 400,
       settings: {
         arrows:false,
-        slidesToShow: 1,
-        slidesToScroll: 1,
+        slidesToShow: 2,
+        slidesToScroll: 2,
       },
     },
   ],
@@ -66,7 +67,7 @@ export const settingsSArrow = {
       breakpoint: 400,
       settings: {
         arrows:false,
-        slidesToShow: 2,
+        slidesToShow: 3,
         slidesToScroll: 2,
       },
     },

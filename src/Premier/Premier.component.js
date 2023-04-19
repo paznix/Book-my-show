@@ -6,49 +6,16 @@ import Poster from "../components/Poster/Poster.component";
 import { settingsLArrow } from "../config/PosterCarousel.config";
 import { PremierImages } from "../config/PremierImages.component";
 
-export const PremierDark = () => {
+export const Premier = () => {
   return (
     <>
-      <div>
-        <h3 className="text-white lg:text-3xl text-xl font-bold pl-3">Premiers</h3>
-        <p className="text-white lg:text-sm text-xs pl-3 lg:pt-1 pt-0">New Movies Every Friday</p>
-        <Slider {...settingsLArrow}>
-          {PremierImages.map((image) => (
-            <Poster {...image} isDark={true}/>
-          ))}
-        </Slider>
-      </div>
-    </>
-  );
-};
-
-export const PremierLight = () => {
-    return (
-      <>
-        <div>
-          <h3 className="text-white text-3xl font-bold pl-3">Premiers</h3>
-          <p className="text-white text-sm pl-3 pt-1">New Movies Every Friday</p>
-          <Slider {...settingsLArrow}>
-            {PremierImages.map((image) => (
-              <Poster {...image} isDark={false}/>
-            ))}
-          </Slider>
-        </div>
-      </>
-    );
-  };
-
-  export const Premier = () => {
-    return (
-      <>
-        <div>
-          <Slider {...settingsLArrow}>
-            {PremierImages.map((image) => (
-              <Poster {...image} isDark={false}/>
-            ))}
-          </Slider>
-        </div>
-      </>
-    );
-  };
-
+    <div className="flex flex-col items-start py-4">
+    <h3 className="text-white text-xl font-bold">Premiers</h3>
+    <p className="text-white text-sm">Brand new release every Friday</p>
+    </div>
+    <Slider {...settingsLArrow}>
+    {PremierImages.map((image)=> (
+      <Poster {...image} isDark />
+    ))}
+    </Slider>
+    </>)};

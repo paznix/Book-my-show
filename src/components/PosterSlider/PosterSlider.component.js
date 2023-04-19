@@ -7,11 +7,18 @@ import { settingsLArrow } from "../../config/PosterCarousel.config";
 const PosterSlider = (props) => {
   return (
     <>
-      <div className="container py-3 mx-auto">
-        <h3 className="text-premier lg:text-2xl text-sm font-bold pl-2 pb-4 mt-10">{props.title}</h3>
+      <div className="container  mx-auto">
+        <h3 className="text-premier lg:text-xl text-sm font-bold pl-2 pb-4 ">
+          {props.original_title}
+        </h3>
+        <p
+          className={`text-sm ${props.isDark ? "text-white" : "text-gray-800"}`}
+        >
+          {props.vote_average}
+        </p>
         <Slider {...settingsLArrow}>
           {props.images.map((image) => (
-            <Poster {...image}/>
+            <Poster {...image} isDark={props.isDark} />
           ))}
         </Slider>
       </div>

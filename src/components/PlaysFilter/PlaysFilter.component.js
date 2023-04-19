@@ -19,7 +19,7 @@ const PlaysFilter = (props) => {
         <div className="flex item-center gap-3 flex-wrap">
          {props.tags.map((tag) => (
            <>
-            <div className="border border-gray-300 px-2 rounded">
+            <div className="border border-gray-300 bg-gray-100 bg-opacity-50 px-2 rounded">
             <span className="text-button">{tag}</span>
             </div>
            </>
